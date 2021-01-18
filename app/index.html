@@ -148,7 +148,15 @@
               <source srcset="images/watch/watch-banner-mobile.png">
               <img srcset="images/watch/watch-baner-mobile.png" alt="watch-banner">
             </picture>
-            <a href="#" class="watch__banner-link">play</a>
+            <a href="#" class="watch__banner-link" id="video-open">play</a>
+            <div class="watch__banner-video-box">
+              <video src="video/watch__banner-video.mp4" class="watch__banner-video" id="watch__banner-video"
+                preload="auto" 
+                ></video>
+                <a href="#" class="watch__banner-close-link" id="video-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 4.9998L4.99995 14.9999M4.99995 4.9998L15 14.9999" stroke="#ffffff" stroke-width="2"/>
+                  </svg></a>
+            </div>
           </div>
         </div>
       </section>

@@ -189,6 +189,7 @@ h1.head__title {
   object-fit: cover;
   height: 482px;
 }
+
 // luxuru end
 
 //popular start
@@ -268,6 +269,105 @@ h1.head__title {
     transform: rotate(45deg);
   }
 }
+.watch__banner-video-box {
+  display: none;
+}
+
+.watch__banner-inner.video-active-box {
+  .watch__banner-box {
+    display: none;
+  }
+  .watch__banner-link {
+    display: none;
+  }
+
+  .watch__banner-video-box {
+    max-width: 375px;
+    width: 100%;
+    height: 0px;
+    animation-name: video-open;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: #1c2834;
+    position: relative;
+    display: block;
+    .watch__banner-video {
+      animation-name: video-active;
+      animation-delay: 1s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      width: 100%;
+      height: 812px;
+      object-fit: cover;
+      z-index: 1;
+      position: relative;
+      opacity: 0;
+    }
+  }
+  @keyframes video-open {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 812px;
+    }
+  }
+  @keyframes video-active {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .watch__banner-close-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $accent;
+    color: #fff;
+    z-index: 999;
+    top: 10px;
+    right: 10px;
+  }
+
+  .watch__banner-video-box.video-close-box {
+    height: 812px;
+    animation-name: video-close;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    .watch__banner-video {
+      opacity: 1;
+      animation-name: video-stop;
+      animation-delay: 0s;
+      animation-duration: 1s;
+    }
+  }
+  @keyframes video-close {
+    from {
+      height: 812px;
+    }
+    to {
+      height: 0px;
+      display: none;
+    }
+  }
+  @keyframes video-stop {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
 //watch__banner end
 
 // univel start

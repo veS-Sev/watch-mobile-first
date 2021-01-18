@@ -19,7 +19,7 @@ $(function () {
 
   var swiper = new Swiper('.popular__galery', {
     slidesPerView: 'auto',
-       centeredSlides: false,
+    centeredSlides: false,
     spaceBetween: 10,
     grabCursor: true,
     freeMode: true,
@@ -28,6 +28,19 @@ $(function () {
       el: '.swiper-pagination',
       clickable: true,
     },
+  });
+
+  $("#video-open").on('click', function () {
+    $(".watch__banner-inner").addClass('video-active-box');
+  })
+
+  $("#video-close").on('click', function () {
+    $(".watch__banner-video-box").addClass("video-close-box");
+    setTimeout(function () {
+      $(".watch__banner-video-box").removeClass("video-close-box");
+      $(".watch__banner-inner").removeClass('video-active-box');
+      
+    }, 2500)
   });
 
 })
