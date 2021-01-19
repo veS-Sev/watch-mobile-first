@@ -28,6 +28,12 @@ $(function () {
       el: '.swiper-pagination',
       clickable: true,
     },
+    breakpoints: {
+      // when window width is >= 768px
+          768: {
+                spaceBetween: 50
+      }
+    }
   });
 
   $("#video-open").on('click', function () {
@@ -39,7 +45,7 @@ $(function () {
     setTimeout(function () {
       $(".watch__banner-video-box").removeClass("video-close-box");
       $(".watch__banner-inner").removeClass('video-active-box');
-      
+
     }, 2500)
   });
 

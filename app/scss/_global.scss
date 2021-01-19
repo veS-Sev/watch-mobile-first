@@ -18,64 +18,74 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   font-size: 16px;
-  color:#1C2834;
-  
+  color: #1c2834;
+  scroll-behavior:smooth;
 }
 
-li{
-  list-style-type: none; 
+li {
+  list-style-type: none;
 }
 // пришиваем футер к дну страницы
 * {
   margin: 0;
   padding: 0;
-  }
-  html,
-  body {
+}
+html,
+body {
   height: 100%;
-  }
-  .wrapper {
+}
+.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  }
-  .content {
+}
+.content {
   flex: 1 0 auto;
-  }
-  .footer {
+}
+.footer {
   flex: 0 0 auto;
-  }
-  //
+}
+//
 
-div[class$="__wrapper"]{
+div[class$="__wrapper"] {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding:0 10px;
+  padding: 0 10px;
 }
 .container {
   max-width: 1014px;
   margin: 0 auto;
-  // @extend %vline;
 }
 
-h3[class$="title"]{
+h3[class$="title"] {
   font-size: 52px;
   font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
   line-height: 46px;
   margin-bottom: 46px;
-    font-weight: 700;
-    span{
-      color:#214AC2;
-    }
+  font-weight: 700;
+  span {
+    color: #214ac2;
+  }
 }
-h6[class$="title"]{
+h6[class$="title"] {
   font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 90%;
-  color:rgba(255,255,255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
   margin-top: 50px;
   margin-bottom: 15px;
+}
+@media (min-width: 425px) {
+  div[class$="__wrapper"] {
+    padding: 0;
+  }
+  h3[class$="title"] {
+    text-align: center;
+  }
+  // .container {
+  //   padding: 0 10px;
+  // }
 }

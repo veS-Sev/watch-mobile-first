@@ -437,10 +437,10 @@ div.footer__wrapper {
 .footer__social {
   margin-bottom: 20px;
 }
-h6.footer__sosial-title {
+h6.footer__social-title {
   margin-top: 53px;
 }
-.footer__sosial-item + .footer__sosial-item {
+.footer__social-item + .footer__social-item {
   margin-top: 11px;
 }
 .footer__newsleter {
@@ -448,3 +448,121 @@ h6.footer__sosial-title {
   font-size: 14px;
 }
 // footer end
+
+@media (min-width: 425px) {
+  div.head__wrapper {
+    padding: 0 10px;
+  }
+
+  div.luxury__wrapper {
+    padding: 0;
+  }
+  .luxury__content {
+    padding: 0 10px;
+  }
+  .luxury__img {
+    transform: translate(0px, 0px);
+    width: 425px;
+    max-width: 100%;
+    margin: -85px auto 0;
+  }
+
+  .watch__banner-inner.video-active-box {
+    .watch__banner-video-box {
+      max-width: 100%;
+    }
+  }
+
+  div.univel__wrapper {
+    background-size: contain;
+  }
+  //
+}
+
+@media (min-width: 768px) {
+  h1.head__title {
+    max-width: 556px;
+  }
+  .head__value-box {
+    margin-left: 30px;
+  }
+  .luxury__content {
+    text-align: center;
+  }
+  .luxury__content-text {
+    text-align: left;
+  }
+  .luxury__numbers-box-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .luxury__numbers-box {
+    order: 1;
+    max-width: 217px;
+    flex-direction: column;
+    padding: 71px 57px 71px 58px;
+    max-height: 381px;
+    margin: 0;
+    margin-left: -58px;
+  }
+  .luxury__img {
+    min-height: 520px;
+    order: 0;
+    margin: 0;
+  }
+  .watch__banner-inner {
+    min-height: 608px;
+    padding-top: 85px;
+  }
+  picture.watch__banner-box {
+    padding: 96px 20px 96px 0;
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+  .watch__banner-link {
+    margin: 0;
+    right: auto;
+    left: 173px;
+  }
+  .watch__banner-inner {
+    height: 608px;
+  }
+  .watch__banner-inner.video-active-box {
+    .watch__banner-video-box {
+      .watch__banner-video {
+        height: 523px;
+      }
+    }
+  }
+  @keyframes video-open {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 523px;
+    }
+  }
+  div.univel__wrapper {
+    padding-top: 80px;
+    background-image: url("../images/univel/univel-bg.jpg");
+    background-position: 20% 80px;
+    background-size: cover;
+    min-height: 567px;
+  }
+  .univel__box {
+    margin: -80px 100px auto auto;
+  }
+  .footer__inner {
+    display: flex;
+  }
+  nav.footer__menu {
+    width: calc(33.33% * 2);
+    max-width: 100%;
+  }
+  h6.footer__social-title{
+    margin-top: 50px;
+  }
+}

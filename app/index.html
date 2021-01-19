@@ -55,23 +55,24 @@
         <a href="#" class="head__discover-link">discover </a>
       </section>
       <section class="luxury">
-        <div class="luxuru__wrapper">
-          <div class="container">
-            <div class="luxury__content">
-              <h3 class="luxury__content-title">luxury <span>watch</span></h3>
-              <main class="luxury__content-text">Breguet is a highly regarded watch manufacturer. Over the years,
-                notable
-                Breguet patrons and timepieces owners include King George III, Queen Victoria, Alexandre I of Russia,
-                Napoléon Bonaparte, Ettore Bugatti, Sir Winston Churchill, Sergei Rachmaninoff, Gioachino Rossini,
-                Arthur
-                Rubinstein and so on. In particular, the Breguet & Fils, Paris No. 2667 (1814) pocket watch ranks as one
-                of
-                the world's most expensive watches ever sold at auction, fetching US$4.69 million (4,339,000 CHF) in
-                Geneva
-                on May 14, 2012.</main>
+        <div class="luxury__wrapper">
+          <!-- <div class="container"> -->
+          <div class="luxury__content">
+            <h3 class="luxury__content-title">luxury <span>watch</span></h3>
+            <main class="luxury__content-text">Breguet is a highly regarded watch manufacturer. Over the years,
+              notable
+              Breguet patrons and timepieces owners include King George III, Queen Victoria, Alexandre I of Russia,
+              Napoléon Bonaparte, Ettore Bugatti, Sir Winston Churchill, Sergei Rachmaninoff, Gioachino Rossini,
+              Arthur
+              Rubinstein and so on. In particular, the Breguet & Fils, Paris No. 2667 (1814) pocket watch ranks as one
+              of
+              the world's most expensive watches ever sold at auction, fetching US$4.69 million (4,339,000 CHF) in
+              Geneva
+              on May 14, 2012.</main>
 
-              <a href="#" class="luxury__cotalog-link">go to catalogue</a>
-            </div>
+            <a href="#" class="luxury__cotalog-link">go to catalogue</a>
+          </div>
+          <div class="luxury__numbers-box-wrap">
             <div class="luxury__numbers-box">
               <div class="luxury__numbers-item">
                 <div class="luxury__numbers">100+</div>
@@ -82,8 +83,9 @@
                 <div class="luxury__numbers-text">famous clients all over the world</div>
               </div>
             </div>
+            <!-- </div> -->
+            <img src="images/luxury/luxury-img.jpg" alt="luxury-image" class="luxury__img">
           </div>
-          <img src="images/luxury/luxury-img.jpg" alt="luxury-image" class="luxury__img">
         </div>
       </section>
       <section class="popular">
@@ -144,18 +146,19 @@
         <div class="container">
           <div class="watch__banner-inner">
             <picture class="watch__banner-box">
-              <source srcset="images/watch/watch-banner.jpg" media="(min-width: 400px)">
+              <source srcset="images/watch/watch-banner.png" media="(min-width: 768px)">
               <source srcset="images/watch/watch-banner-mobile.png">
-              <img srcset="images/watch/watch-baner-mobile.png" alt="watch-banner">
+              <img srcset="images/watch/watch-baner.png" alt="watch-banner">
             </picture>
             <a href="#" class="watch__banner-link" id="video-open">play</a>
             <div class="watch__banner-video-box">
               <video src="video/watch__banner-video.mp4" class="watch__banner-video" id="watch__banner-video"
-                preload="auto" 
-                ></video>
-                <a href="#" class="watch__banner-close-link" id="video-close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 4.9998L4.99995 14.9999M4.99995 4.9998L15 14.9999" stroke="#ffffff" stroke-width="2"/>
-                  </svg></a>
+              preload="none"
+                 autoplay muted="muted" loop></video>
+              <a href="#" class="watch__banner-close-link" id="video-close"><svg width="20" height="20"
+                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 4.9998L4.99995 14.9999M4.99995 4.9998L15 14.9999" stroke="#ffffff" stroke-width="2" />
+                </svg></a>
             </div>
           </div>
         </div>
@@ -177,8 +180,9 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="container">
+
+          <a href="#" class="footer__logo"><img src="images/logo.svg" alt="Breguet logo" class="footer__logo-img"></a>
           <div class="footer__inner">
-            <a href="#" class="footer__logo"><img src="images/logo.svg" alt="Breguet logo" class="footer__logo-img"></a>
             <nav class="footer__menu">
               <h6 class="footer__menu-title">menu</h6>
               <ul class="footer__menu-items">
@@ -193,12 +197,12 @@
               </ul>
             </nav>
             <div class="footer__social">
-              <h6 class="footer__sosial-title">follow us</h6>
-              <ul class="footer__sosial-items">
-                <li class="footer__sosial-item"><a href="#" class="footer__sosial-link">FACEBOOK</a></li>
-                <li class="footer__sosial-item"><a href="#" class="footer__sosial-link">TWITTER</a></li>
-                <li class="footer__sosial-item"><a href="#" class="footer__sosial-link">INSTAGRAM</a></li>
-                <li class="footer__sosial-item"><a href="#" class="footer__sosial-link">YOUTUBE</a></li>
+              <h6 class="footer__social-title">follow us</h6>
+              <ul class="footer__social-items">
+                <li class="footer__social-item"><a href="#" class="footer__social-link">FACEBOOK</a></li>
+                <li class="footer__social-item"><a href="#" class="footer__social-link">TWITTER</a></li>
+                <li class="footer__social-item"><a href="#" class="footer__social-link">INSTAGRAM</a></li>
+                <li class="footer__social-item"><a href="#" class="footer__social-link">YOUTUBE</a></li>
               </ul>
 
             </div>
