@@ -21,7 +21,10 @@ $lblack: #020911;
 //   margin: 0 auto;
 //   padding: 0 10px;
 //  }
-
+@mixin w100{
+  max-width: 100%;
+    width:100%;
+}
 
  @mixin link-btn{
   position: absolute;

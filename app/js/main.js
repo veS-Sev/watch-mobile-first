@@ -2,8 +2,15 @@ $(function () {
 
   var mySwiper = new Swiper('.head__slider', {
     // Optional parameters
+    slidesPerView: 1,
+    effect: 'fade',
     direction: 'vertical',
     loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+    },
 
   });
 
@@ -17,24 +24,49 @@ $(function () {
 
   });
 
-  var swiper = new Swiper('.popular__galery', {
-    slidesPerView: 'auto',
-    centeredSlides: false,
-    spaceBetween: 10,
-    grabCursor: true,
-    freeMode: true,
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      // when window width is >= 768px
+  var catalogSlider = null;
+  var mediaQuerySize = 1279;
+
+  function catalogSliderInit() {
+    if (!catalogSlider) {
+      catalogSlider = new Swiper('.popular__galery', {
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        spaceBetween: 10,
+        grabCursor: true,
+        freeMode: true,
+        loop: true,
+        breakpoints: {
+          // when window width is >= 768px
           768: {
-                spaceBetween: 50
-      }
+            spaceBetween: 50
+          },
+        }
+      });
+    }
+  };
+
+  function catalogSliderDestroy() {
+    if (catalogSlider) {
+      catalogSlider.destroy();
+      catalogSlider = null;
+    }
+  };
+
+  $(window).on('load resize', function () {
+    // Берём текущую ширину экрана
+    var windowWidth = $(this).innerWidth();
+
+    // Если ширина экрана меньше или равна mediaQuerySize(1024)
+    if (windowWidth <= mediaQuerySize) {
+      // Инициализировать слайдер если он ещё не был инициализирован
+      catalogSliderInit()
+    } else {
+      // Уничтожить слайдер если он был инициализирован
+      catalogSliderDestroy()
     }
   });
+  // 
 
   $("#video-open").on('click', function () {
     $(".watch__banner-inner").addClass('video-active-box');
