@@ -86,13 +86,15 @@ h6[class$="title"] {
   h3[class$="title"] {
     text-align: center;
   }
+}
   @media(min-width: 1280px){
     h3[class$="title"] {
       text-align: left;
       max-width:400px;
     } 
+    h6[class$="title"]{
+      margin-top: 0;
+    }
   }
-  // .container {
-  //   padding: 0 10px;
-  // }
-}
+
+
