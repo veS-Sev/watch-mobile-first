@@ -1,7 +1,6 @@
 $(function () {
 
   var mySwiper = new Swiper('.head__slider', {
-    // Optional parameters
     slidesPerView: 1,
     effect: 'fade',
     direction: 'vertical',
@@ -77,7 +76,6 @@ $(function () {
     setTimeout(function () {
       $(".watch__banner-video-box").removeClass("video-close-box");
       $(".watch__banner-inner").removeClass('video-active-box');
-
     }, 2500)
   });
 

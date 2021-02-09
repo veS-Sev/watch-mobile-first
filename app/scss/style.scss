@@ -376,7 +376,7 @@ div.luxury__wrapper {
 
 // unveils start
 div.unveils__wrapper {
-padding: 0;
+  padding: 0;
 }
 .unveils__bgr {
   background-image: url("../images/unveils/unveils-bg-mobile.jpg");
@@ -553,7 +553,7 @@ h6.footer__social-title {
       height: 523px;
     }
   }
-    .unveils__bgr {
+  .unveils__bgr {
     padding-top: 80px;
     background-image: url("../images/unveils/unveils-bg.jpg");
     background-position: 20% 80px;
@@ -729,26 +729,37 @@ h6.footer__social-title {
     color: #fff;
 
     .head__vertical-element-item {
-      height: 50%;
       position: relative;
       span {
         position: absolute;
         min-width: 100px;
-
         transform: rotate(-90deg);
         transform-origin: 50% 100%;
       }
     }
-
     .top-block {
+      min-height: 241px;
+      max-height: 40%;
       opacity: 0.3;
       span {
-        bottom: 111px;
+        bottom: 87px;
       }
     }
     .bottom-block {
+      max-height: 45%;
+      min-height: 361px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        background-color: #fff;
+        opacity: 0.2;
+        top: 0;
+        left: -10px;
+      }
       span {
-        top: 35px;
+        top: 57px;
       }
     }
   }
@@ -803,7 +814,6 @@ h6.footer__social-title {
     max-width: 136px;
     width: 100%;
   }
-
   .luxury__numbers {
     margin-bottom: 7px;
   }
@@ -863,7 +873,6 @@ h6.footer__social-title {
     top: 268px;
     left: 355px;
   }
-
   .unveils__bgr {
     padding-top: 72px;
     background-position: 20% 72px;
@@ -904,7 +913,7 @@ h6.footer__social-title {
     margin-right: 150px;
     flex: 2;
   }
-  .footer__menu-item + .footer__menu-item{
+  .footer__menu-item + .footer__menu-item {
     margin-right: 0;
   }
   .footer__social {
